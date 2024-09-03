@@ -149,4 +149,15 @@ h1 {
         width: 100%;
         padding: 1rem;
     }
+
+    .group-modal,
+    .detail-modal {
+        width: 90%;
+    }
+    .group-modal .group-input {
+        justify-content: space-between;
+    }
+    .group-input input {
+        width: 85%;
+    }
 }
