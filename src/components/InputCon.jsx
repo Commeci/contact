@@ -88,7 +88,7 @@ export default function InputCon({ infoLists, setInfoList }) {
 
         setName("");
         setPhone("");
-        setGroup("");
+        setGroup(groupList[0]);
         setMemo("");
     };
 
