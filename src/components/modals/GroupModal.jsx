@@ -20,12 +20,26 @@ export default function GroupModal({ state, groupList, setGroupList }) {
         }
     };
     const deleteGroup = (groupToDelete) => {
-        const updatedGroupList = groupList.filter(
-            (group) => group !== groupToDelete
+        const contactLists =
+            JSON.parse(localStorage.getItem("contactLists")) || [];
+
+        const isGroupInUse = contactLists.some(
+            (contact) => contact.group === groupToDelete
         );
-        setGroupList(updatedGroupList);
-        localStorage.setItem("groupLists", JSON.stringify(updatedGroupList));
-        console.log("삭제");
+
+        if (isGroupInUse) {
+            alert("이 그룹은 현재 사용 중이므로 삭제할 수 없습니다.");
+        } else {
+            const updatedGroupList = groupList.filter(
+                (group) => group !== groupToDelete
+            );
+            setGroupList(updatedGroupList);
+            localStorage.setItem(
+                "groupLists",
+                JSON.stringify(updatedGroupList)
+            );
+            console.log("삭제");
+        }
     };
     return (
         <div className="group-modal">

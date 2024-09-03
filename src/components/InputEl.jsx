@@ -24,6 +24,7 @@ export default function InputEl({
                     placeholder={info.type}
                     value={data}
                     onChange={handleInputChange}
+                    id={info.id}
                 />
             </div>
             {showError && <p className="error-msg">{info.errorMessage}</p>}
