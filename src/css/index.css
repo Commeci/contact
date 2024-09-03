@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+.btn {
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #c8b6ff;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #b298ff;
+}
+
+.btn01,
+.btn02 {
+    padding: 0.5rem;
+}
+.btn02 {
+    background-color: tomato;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+.btn02:hover {
+    background-color: #fda5a5;
+}
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+i {
+    cursor: pointer;
+}

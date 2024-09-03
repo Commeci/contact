@@ -1,0 +1,152 @@
+.main {
+    position: relative;
+}
+h1 {
+    text-align: center;
+    padding: 1.5rem;
+}
+.sec {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-con {
+    width: 40%;
+    margin-right: 2rem;
+}
+.input-con .input-box {
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.input-el {
+    margin-bottom: 0.5rem;
+}
+.input-el .input-div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.input-el label,
+.select-el label {
+    width: 35%;
+}
+.input-el input {
+    width: 65%;
+    padding: 0.5rem;
+}
+.error-msg {
+    color: red;
+    text-align: right;
+    font-size: 0.75rem;
+}
+.select-el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.select-el > div {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+}
+.select-el select {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    width: 55%;
+}
+.select-el button {
+    width: 45%;
+}
+.save-btn {
+    width: 100%;
+}
+
+.list-area {
+    width: 60%;
+    padding: 1rem;
+}
+.search-con {
+    display: flex;
+}
+.search-con input {
+    padding: 0.5rem;
+    background-color: rgb(252, 240, 252);
+    border: none;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 0.5rem;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed gray;
+    align-items: center;
+}
+.list label:nth-of-type(1) {
+    width: 20%;
+}
+.group-modal,
+.detail-modal {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    padding: 2rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.group-modal ul > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.group-modal .group-input {
+    margin-top: 1rem;
+    display: flex;
+}
+.group-input input {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.close-btn {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    cursor: pointer;
+}
+.detail-modal p {
+    text-align: left;
+    margin: 1rem 0;
+}
+.detail-modal p > label:nth-of-type(1) {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .sec {
+        margin: auto;
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-con {
+        width: 100%;
+    }
+    .list-area {
+        width: 100%;
+        padding: 1rem;
+    }
+}
