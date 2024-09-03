@@ -19,7 +19,7 @@ export default function ListArea({ infoLists, setInfoList }) {
 
     const filterContact = infoLists.filter((contact) => {
         return (
-            contact.name.toLowerCase().includes(searchItem.toLowerCase()) ||
+            contact.name.includes(searchItem) ||
             contact.phone.includes(searchItem) ||
             contact.group.toLowerCase().includes(searchItem.toLowerCase())
         );
