@@ -3,6 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "homepage": "https://Commeci.github.io/contact",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
